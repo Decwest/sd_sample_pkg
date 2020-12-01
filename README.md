@@ -1,8 +1,6 @@
 ## sd_sample_pkg
 
-## 使い方
-
-- ```src/metch_templete.cpp```内の```${USERNAME}```は、各自の環境のユーザ名に変更して有効なパスになるようにする
+## ダウンロード
 
 ```shell
 cd ~/catkin_ws/src
@@ -14,7 +12,6 @@ catkin_make
 ## サンプルプログラム
 
 - 各処理の詳細や内容についてはソースコードを見てほしい
-- カメラを用いたサンプルがあるが、ロボットへのカメラのモデリングは行っていない。
 
 ### トピック通信のサンプルプログラム
 
@@ -67,9 +64,7 @@ rosrun teleop_twist_keybod teleop_twist_keyboard.py
 ```
 
 ### 画像処理のサンプルプログラム
-
-- ```src/metch_templete.cpp```
-  - テンプレート画像のパスを適切なものに書き換えてからビルドする。
+- ```src/metch_templete.cpp```内の```${USERNAME}```は、各自の環境のユーザ名に変更して有効なパスになるようにする
 
 ```shell
 # teminal 1
@@ -85,3 +80,7 @@ rosrun sd_sample_pkg matching_node
 
 - ロボットモデル: ```urdf/robot.urdf.xacro```
 - サンプルのworld: ```worlds/sample.world```
+
+---
+以下追記
+## 物体検出
