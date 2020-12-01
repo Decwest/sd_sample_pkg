@@ -8,5 +8,5 @@ fi
 
 ROOT_DIR=$(cd $(dirname '$0') && pwd)
 
-wget -P $ROOT_DIR/external_pkgs/darknet_ros/model/ \
+wget -P $ROOT_DIR/model/ \
      https://pjreddie.com/media/files/$WEIGHTS
