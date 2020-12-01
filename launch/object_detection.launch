@@ -6,7 +6,7 @@
    <arg name="yolo_config_path" value="$(find sd_sample_pkg)/external_pkgs/darknet_ros/model"/>
    <arg name="ros_param_file" value="$(find sd_sample_pkg)/external_pkgs/darknet_ros/config/ros.yaml"/>
    <arg name="network_param_file" value="$(find sd_sample_pkg)/external_pkgs/darknet_ros/config/yolov3-tiny.yaml"/>
-   <arg name="image" value="/camera"/>
+   <arg name="image" value="/camera/image_raw"/>
   </include>
   <include file="$(find sd_sample_pkg)/launch/robot_simulation.launch" />
 
