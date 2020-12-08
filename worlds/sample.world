@@ -1,3 +1,4 @@
+<?xml version="1.0" ?>
 <sdf version='1.6'>
   <world name='default'>
     <model name='ground_plane'>
@@ -993,6 +994,16 @@
         <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>0.633416 0.862301 0.071647 -0 -2e-05 1.61032</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0 -0 0 0 -0 0</acceleration>
+          <wrench>-0 -0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='plastic_cup_1'>
+        <pose frame=''>1 1 0 -0 -2e-05 1.61032</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>1 1 0 -0 -2e-05 1.61032</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>-0 -0 0 0 -0 0</acceleration>
           <wrench>-0 -0 0 0 -0 0</wrench>

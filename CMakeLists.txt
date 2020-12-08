@@ -150,6 +150,7 @@ add_executable(SD_sample_camera src/SD_sample_camera.cpp)
 add_executable(matching_node
   src/match_template.cpp
 )
+add_executable(following_commander src/following_commander.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -178,6 +179,10 @@ target_link_libraries(SD_sample_camera
 )
 
 target_link_libraries(matching_node ${catkin_LIBRARIES} ${PYTHON_LIBRARIES}  ${OpenCV_LIBRARIES})
+
+target_link_libraries(following_commander
+  ${catkin_LIBRARIES}
+)
 
 #############
 ## Install ##
