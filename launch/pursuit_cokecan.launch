@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<launch>
+ <include file="$(find sd_sample_pkg)/launch/robot_simulation.launch"/>
+ <node name="matching_node" pkg="sd_sample_pkg" type="matching_node">
+  <param name="img_path" value="$(find sd_sample_pkg)/Picture/coke_can.png"/>
+ </node>
+ <node name="laser_stop" pkg="sd_sample_pkg" type="laser_stop"/>
+ <node name="following_commander" pkg="sd_sample_pkg" type="following_commander"/>
+
+</launch>

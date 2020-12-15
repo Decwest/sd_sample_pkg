@@ -8,6 +8,8 @@
 
 using namespace cv;
 
+std::string img_path="";
+
 class TemplateMatchingNode {
    private:
     ros::NodeHandle nh_;
@@ -15,7 +17,7 @@ class TemplateMatchingNode {
     image_transport::ImageTransport it_;
     image_transport::Subscriber sub_;
 
-    const char* template_img_path_ = "../Picture/coke_can.png";
+    const char* template_img_path_ = img_path.c_str();
     Mat template_img_;
     int match_method_ = CV_TM_SQDIFF;
     std_msgs::Float32 pub_msg;
@@ -83,6 +85,8 @@ class TemplateMatchingNode {
 
 int main(int argc, char** argv) {
     ros::init(argc, argv, "matching_node");
+    ros::NodeHandle pnh("~");
+    pnh.getParam("img_path", img_path);
     TemplateMatchingNode node = TemplateMatchingNode();
     ros::Rate loop_rate(30);
     while (ros::ok()) {
