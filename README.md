@@ -1,4 +1,4 @@
-## sd_sample_pkg (A班)
+# sd_sample_pkg (A班)
 
 TAの[sskitajima](https://github.com/sskitajima)さんが作成したサンプルパッケージをフォークして追加機能を実装しました。
 
